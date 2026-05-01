@@ -1,0 +1,129 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 22px;
+  line-height: 1;
+  color: #333;
+  background-color: #f1f1f1;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+footer, header {
+  background-color: #00171F;
+  color: #FFFFFF;
+  padding: 10px;
+  text-align: center;
+  font-size: 22px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul li ul.dropdown {
+    position: absolute;
+    z-index: 999;
+    display: none;
+    background-color: #99E2FF; 
+    border: 2px solid black;
+    padding: 5px;
+}
+
+ul li:hover ul.dropdown {
+    display: block;
+}
+
+nav ul.dropdown li a {
+    padding: 5px 10px;
+    display: block;
+}
+
+ul.dropdown li a:hover {
+    background-color: aquamarine;
+}
+
+footer {
+    margin-top: 40px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a, footer a {
+  color: #00A8E8;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+main a {
+    text-decoration: underline;
+}
+
+nav a:hover, .navbar a:hover {
+  color: #95A3B3;
+}
+
+main {
+  padding: 20px;
+  margin: 0 auto;
+  text-align: left;
+  background-color: #99E2FF; 
+  font-size: 22px;
+  line-height: 1;
+  color: #222222;
+  min-height: 640px;
+}
+
+h1 {
+  color: #47D1FF;
+}
+
+#resume_h1 {
+    color: black;
+    text-align: left;
+    padding-left: 160px;
+}
+
+h2, h3, h4, h5, h6 {
+  color: #222222;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 columns */
+    gap: 20px;
+}
+
+.container div {
+    background: lightgray;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid black;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    line-height: 1.5;
+}
+
+.basic-info { grid-column: 1; grid-row: 1; }
+.skills     { grid-column: 2; grid-row: 1; }
+
+.academic   { grid-column: 1; grid-row: 2; }
+.experience { grid-column: 2; grid-row: 2; }
+
+.languages  { grid-column: 1; grid-row: 3; }
+.hobbies    { grid-column: 2; grid-row: 3; }
+
+.contact    { grid-column: 1; grid-row: 4; }
+.career     { grid-column: 2; grid-row: 4; }
